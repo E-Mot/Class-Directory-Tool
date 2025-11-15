@@ -194,6 +194,3 @@ You are free to modify or expand it for your own learning purposes.
 Special thanks to open-source developers and documentation writers whose tools make learning and experimentation possible — including the maintainers of **python-docx**, **colorama**, and **PyInstaller**.
 
 ---
-
-
-(This is a test commit.)
