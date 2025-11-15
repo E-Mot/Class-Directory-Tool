@@ -197,4 +197,5 @@ Special thanks to open-source developers and documentation writers whose tools m
 
 Test change made from VM (Developer A)
 
-Test change made from local machine (Developer B) (New edit on local host)
+Test change made from local machine (Developer B) (Merged edit)
+
