@@ -73,18 +73,31 @@ python central_control.py --help
 ```
 ClassDirectoryTool/
 │
-├── __pycache__/               # Compiled Python cache (auto-generated)
-├── build/                     # PyInstaller build artifacts
-├── dist/                      # Packaged executable and supporting files
-│
-├── central_control.py                     # Main command-line interface (entry point)
+├── venv/                      # Project virtual environment (not committed to Git)
+|
+├── central_control.py         # Main command-line interface (entry point)
 ├── create_template.py         # Creates directory and file structure
-├── personalize_docs.py             # Renames folders and modifies Word content
+├── personalize_docs.py        # Renames folders and modifies Word content
 ├── version.py                 # Version tracking and semantic versioning notes
 │
+├── requirements.txt           # Project dependencies for recreating the venv
 ├── README.md                  # Project documentation
+|
+└── .gitignore                 # Excludes venv, cache, build artifacts, etc.
+
+```
+
+### 📦 Build Artifacts (Generated Later)
+
+These folders and files are created when running PyInstaller:
+
+```
+ClassDirectoryTool/
 │
-├── ClassDirectoryTool.spec # PyInstaller spec file for current executable
+├── build/ # PyInstaller build artifacts (auto-generated)
+├── dist/ # Packaged executable output
+└── ClassDirectoryTool.spec # PyInstaller spec file for executable configuration
+
 ```
 
 ---
