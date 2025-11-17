@@ -94,9 +94,9 @@ These folders and files are created when running PyInstaller:
 ```
 ClassDirectoryTool/
 │
-├── build/ # PyInstaller build artifacts (auto-generated)
-├── dist/ # Packaged executable output
-└── ClassDirectoryTool.spec # PyInstaller spec file for executable configuration
+├── build/                    # PyInstaller build artifacts (auto-generated)
+├── dist/                     # Packaged executable output
+└── ClassDirectoryTool.spec   # PyInstaller spec file for executable configuration
 
 ```
 
