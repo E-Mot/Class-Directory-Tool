@@ -131,7 +131,7 @@ def create_discussion_file():
  
 
 def create_seminar_file():
-    file_list = ["Unit 1 - Seminar", "Unit 2 - Seminar", "Unit 3 - Seminar", "Unit 4 - Seminar", "Unit 5 - Seminar", "Unit 6 - Seminar", "Unit 7 - Seminar", "Unit 8 - Seminar", "Unit 9 - Seminar", "Unit 10 - Seminar"]
+    file_list = ["Unit 1 - Seminar - Chat log", "Unit 2 - Seminar - Chat log", "Unit 3 - Seminar - Chat log", "Unit 4 - Seminar - Chat log", "Unit 5 - Seminar - Chat log", "Unit 6 - Seminar - Chat log", "Unit 7 - Seminar - Chat log", "Unit 8 - Seminar - Chat log", "Unit 9 - Seminar - Chat log", "Unit 10 - Seminar - Chat log"]
     file_index = 0
     sub_folder_path = os.path.join(DESKTOP_PATH, "Class template", "1. Units")
 
