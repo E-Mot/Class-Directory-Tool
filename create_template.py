@@ -185,6 +185,12 @@ def create_seminar_file():
                 pbdr.append(bottom)
                 pPr.append(pbdr)
 
+                
+                paragraph_3 = doc.add_paragraph()
+                run_3 = paragraph_3.add_run("")
+                
+                run_3.add_break()
+
                 doc.save(file_path)
 
                 if file_index < 9:
