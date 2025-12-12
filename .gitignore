@@ -12,8 +12,9 @@ venv/
 env/
 .venv/
 
-# Editor settings
+#IDE-specific configuration files
 .vscode/
+.idea/
 
 # Logs and temporary files
 *.log
@@ -36,6 +37,3 @@ Desktop.ini
 
 # Word temporary backup files
 ~$*.docx
-
-#Ignore IDE-specific configuration files
-.idea/
