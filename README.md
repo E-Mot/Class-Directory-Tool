@@ -8,17 +8,24 @@ It helps streamline my academic workflow at the beginning of each term by automa
 ## 🚀 Features
 
 ✅ Automatically creates a pre-structured class directory  
+
 ✅ Builds nested folders for Units, Discussions, Assignments, and more  
+
 ✅ Generates preformatted Word documents with custom styles  
+
 ✅ Renames folders and updates text with specified course name  
+
 ✅ Supports interactive prompts (wizard) and command-line options
+
 ✅ Displays clear visual feedback in the wizard:
    - 💬 for prompts  
    - ✅ for success  
    - ❌ for errors  
    - ℹ️ for informational messages
    - 💡 for tool tips
+
 ✅ Can be packaged into a single `.exe` for Windows (using PyInstaller)
+
 ✅ The `.exe` launches a GUI for non-technical users and general ease of use 
 
 ---
