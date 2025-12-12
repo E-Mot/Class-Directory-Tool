@@ -36,3 +36,6 @@ Desktop.ini
 
 # Word temporary backup files
 ~$*.docx
+
+#Ignore IDE-specific configuration files
+.idea/
