@@ -1,6 +1,7 @@
 # 🎓 Class Directory Creation Tool
 
 The **Class Directory Creation Tool** is a Python-based automation utility that I designed for my personal use to create and personalize organized directory templates for college courses.  
+
 It helps streamline my academic workflow at the beginning of each term by automatically generating subfolders, APA-formatted Word files, and course-specific names for my archives.
 
 ---
