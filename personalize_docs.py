@@ -6,7 +6,6 @@ import shutil
 
 DESKTOP_PATH = os.path.join(os.path.expanduser("~"), "Desktop")
 
-
 #------------------------------------------- Rename the parent folder -------------------------------------------
 
 def rename_parent_folder(new_folder_name):

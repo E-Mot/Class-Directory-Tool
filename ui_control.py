@@ -5,6 +5,10 @@ import os
 from create_template import execute_template_functions
 from personalize_docs import rename_parent_folder, modify_discussion_files
 
+#------------------------------------------------------------------------------------------------------#
+#----------------------------------------- Event-driven logic -----------------------------------------#
+#------------------------------------------------------------------------------------------------------#
+
 def resource_path(relative_path):
     base = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(base, relative_path)
@@ -34,6 +38,10 @@ def create_new_directory():
         messagebox.showerror("Error","Please enter folder name")
     elif not entry_2.get():
         messagebox.showerror("Error","Please enter class name")
+
+#------------------------------------------------------------------------------------------------------#
+#------------------------------------------- User interface -------------------------------------------#
+#------------------------------------------------------------------------------------------------------#
 
 root = tk.Tk()
 root.geometry("450x250")
@@ -71,6 +79,8 @@ entry_2.grid(row=1, column=1, sticky="ew", padx=(20,20), pady=(20,20))
 button_1_font = font.Font(size=10, family="Segoe UI")
 button_1 = tk.Button(root, text="Create", command=create_new_directory, font=button_1_font, width=9, height=1, pady=6, relief="raised", bg="#f7f7f7", bd=2)
 button_1.grid(row=2, column=0, columnspan=2, pady=(10,20))
+
+# Entry point
 
 if __name__ == "__main__":
     root.mainloop()

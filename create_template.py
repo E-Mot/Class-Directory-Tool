@@ -29,8 +29,6 @@ def create_sub_dirs():
         sub_folder_path = os.path.join(sub_directory_path, folder_name)
         os.makedirs(sub_folder_path, exist_ok = True)
 
-
-
 #------------------------------------------- Creating sub-directories within the '1. Units' folder -------------------------------------------
 
 def create_units_sub_dirs():
@@ -39,8 +37,6 @@ def create_units_sub_dirs():
      for folder_name in sub_folders:
          sub_folder_path = os.path.join(sub_directory_path, folder_name)
          os.makedirs(sub_folder_path, exist_ok = True)
-
-
 
 #------------------------------------------- Creating sub-directories within each '.Unit X' folder -------------------------------------------
 
@@ -129,7 +125,6 @@ def create_discussion_file():
 
                 doc.save(file_path)
  
-
 def create_seminar_file():
     file_list = ["Unit 1 - Seminar - Chat log", "Unit 2 - Seminar - Chat log", "Unit 3 - Seminar - Chat log", "Unit 4 - Seminar - Chat log", "Unit 5 - Seminar - Chat log", "Unit 6 - Seminar - Chat log", "Unit 7 - Seminar - Chat log", "Unit 8 - Seminar - Chat log", "Unit 9 - Seminar - Chat log", "Unit 10 - Seminar - Chat log"]
     file_index = 0
@@ -196,11 +191,7 @@ def create_seminar_file():
                 if file_index < 9:
                     file_index += 1
                 else:
-                    break
-                
-
-                    
-
+                    break            
 
 #------------------------------------------- Creating sub-directories within the '2. Class materials' folder -------------------------------------------
 
@@ -247,7 +238,7 @@ def create_office_file():
 
     doc.save(file_path)
 
-#------------------------------------------- Executing the functions -------------------------------------------
+#------------------------------------------- Function execution -------------------------------------------
 
 def execute_template_functions():
     create_outer_folder()

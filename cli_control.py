@@ -4,7 +4,10 @@ from create_template import execute_template_functions
 from personalize_docs import rename_parent_folder, modify_discussion_files
 from version import __version__
 
-# This is the interactive mode wizard, initiated by default when the program is launched via its executable
+#------------------------------------------------------------------------------------------------------#
+#--------------------------------------- Interactive wizard logic -------------------------------------#
+#------------------------------------------------------------------------------------------------------#
+
 def run_wizard():
     print("-----------------Class Directory Creation Tool-----------------\n")
     print(f"                            v{__version__}\n")
@@ -44,6 +47,10 @@ def run_wizard():
                 secondary_prompt = input("💬 Please enter 'y' or 'n': ")
                 print()
                 continue
+
+#------------------------------------------------------------------------------------------------------#
+#----------------------------------- CLI argument and error handling ----------------------------------#
+#------------------------------------------------------------------------------------------------------#
 
 def main():
     # TODO: Add additional non-interactive mode flags (parameters) later (e.g., --create, --rename, --modify)
@@ -90,6 +97,8 @@ def main():
     except Exception as e:
         print(f"\n❌ Error: {e}")
         sys.exit(1)
+
+# Entry point
 
 if __name__ == "__main__":
     main()
