@@ -11,7 +11,7 @@ It helps streamline my academic workflow at the beginning of each term by automa
 ```
 ClassDirectoryTool/
 │
-├── venv                       # Project virtual environment (not committed to Git)
+├── venv/                       # Project virtual environment (not committed to Git)
 |
 ├── cli_control.py             # CLI entry point (argparse-based)
 |── ui_control.py              # GUI entry point (Tkinter-based)
