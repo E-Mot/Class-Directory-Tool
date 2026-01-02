@@ -1,12 +1,49 @@
 # 🎓 Class Directory Creation Tool
 
-The **Class Directory Creation Tool** is a Python-based automation utility that I designed for my personal use to create and personalize organized directory templates for college courses.  
+This tool is a Python-based automation utility that I designed for my personal use to create and personalize organized directory templates for college courses.  
 
 It helps streamline my academic workflow at the beginning of each term by automatically generating subfolders, APA-formatted Word files, and course-specific names for my archives.
 
 ---
 
-## 🚀 Features
+## 🗂 Project Structure
+
+```
+ClassDirectoryTool/
+│
+├── venv                       # Project virtual environment (not committed to Git)
+|
+├── cli_control.py             # CLI entry point (argparse-based)
+|── ui_control.py              # GUI entry point (Tkinter-based)
+├── create_template.py         # Creates directory and file structure
+├── personalize_docs.py        # Renames folders and modifies Word content
+├── version.py                 # Version tracking and semantic versioning notes
+│
+├── requirements.txt           # Project dependencies for recreating the venv
+├── README.md                  # Project documentation
+|
+├── .gitignore                 # Excludes venv, cache, build artifacts, etc.
+|
+└── foldericon.ico             # Used for both Tkinter window icon and PyInstaller executable icon
+
+```
+
+### 📦 Build Artifacts (Generated Later)
+
+These folders and files are created when running PyInstaller:
+
+```
+ClassDirectoryTool/
+│
+├── build/                    # PyInstaller build artifacts (auto-generated)
+├── dist/                     # Packaged executable output
+└── ClassDirectoryTool.spec   # PyInstaller spec file for executable configuration
+
+```
+
+---
+
+## ✨ Current Features
 
 ✅ Automatically creates a pre-structured class directory  
 
@@ -31,7 +68,7 @@ It helps streamline my academic workflow at the beginning of each term by automa
 
 ---
 
-## 🧠 How It Works
+## 🚀 How It Works
 
 ### 🟢 Interactive Mode
 
@@ -77,52 +114,14 @@ python cli_control.py --help
 
 ---
 
-## 🧩 Project Structure
+## 🧩 Requirements & Dependencies
 
-```
-ClassDirectoryTool/
-│
-├── venv                       # Project virtual environment (not committed to Git)
-|
-├── cli_control.py             # CLI entry point (argparse-based)
-|── ui_control.py              # GUI entry point (Tkinter-based)
-├── create_template.py         # Creates directory and file structure
-├── personalize_docs.py        # Renames folders and modifies Word content
-├── version.py                 # Version tracking and semantic versioning notes
-│
-├── requirements.txt           # Project dependencies for recreating the venv
-├── README.md                  # Project documentation
-|
-├── .gitignore                 # Excludes venv, cache, build artifacts, etc.
-|
-└── foldericon.ico             # Used for both Tkinter window icon and PyInstaller executable icon
+### 📚 Python Version and Libraries
 
-```
+- Python **3.10+**
+- **python-docx** — Used to create, read, and modify Microsoft Word (.docx) documents
 
-### 📦 Build Artifacts (Generated Later)
-
-These folders and files are created when running PyInstaller:
-
-```
-ClassDirectoryTool/
-│
-├── build/                    # PyInstaller build artifacts (auto-generated)
-├── dist/                     # Packaged executable output
-└── ClassDirectoryTool.spec   # PyInstaller spec file for executable configuration
-
-```
-
----
-
-## 🧰 Requirements
-
-**Python 3.10+**
-
-Required libraries:
-```bash
-pip install python-docx colorama
-```
-*(Note: `argparse`, `os`, `re`, `sys`,`shutil`, and `tkinter` are built into Python, but are listed here for clarity.)*
+All other imports are part of Python’s standard library.
 
 Optional (for packaging):
 ```bash
@@ -184,16 +183,16 @@ v0.8.0 — Pre-release build (interactive mode and GUI functional; CLI parameter
 This project demonstrates:
 
 - Practical use of Python automation
-- File and directory manipulation with `os` and `shutil`
-- Word document creation and editing using `python-docx`
-- CLI design and argument parsing with `argparse`
-- Use of regular expressions with `re` for pattern-based sorting
+- File and directory manipulation with os and shutil
+- Word document creation and editing using python-docx
+- CLI design and argument parsing with argparse
+- Use of regular expressions with re for pattern-based sorting
 - Software modularity across multiple Python files
 - Cross-module imports and function reuse
 - Command-line interaction with visual feedback
-- Design and implementation of a graphical user interface (GUI) using `tkinter`
+- Design and implementation of a graphical user interface (GUI) using tkinter
 - Event-driven programming through GUI callbacks and user input handling
-- Packaging Python scripts into a standalone Windows executable with `PyInstaller`
+- Packaging Python scripts into a standalone Windows executable with PyInstaller
 - Implementation of semantic versioning (SemVer) for release tracking
 - Clear project documentation using Markdown (README.md)
 - Safe experimentation in a virtualized sandbox environment (Oracle VirtualBox)
